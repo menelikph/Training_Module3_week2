@@ -37,7 +37,7 @@ console.log("Listas de productos (objeto): ", products);
 console.log("lista de productos unicos (set): ", uniqueProducts);
 console.log("Pruebas completas de gestion de datos: ", productCategories);
 
-// Step 4: DOM display
+// Step 4: DOM display and validation
 function displayData() {
   let productText = "";
   for (let key in products) {
@@ -60,6 +60,7 @@ function displayData() {
 
   const objectCount = Object.keys(products).length;
   const setCount = uniqueProducts.size;
+  
   const validationMessage =
     objectCount === setCount
       ? "✅ No duplicate product names found."
